@@ -46,7 +46,7 @@ coreos:
                                           --bind=/usr/share/oem:/mnt \
                                           --user=root \
                                           --keep-unit \
-                                          /usr/local/bin/ironic-python-agent
+                                          /usr/local/bin/ironic-python-agent --debug --log-file=/dev/console
         Restart=always
         RestartSec=30s
 
